@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Weather.css';
+import Hello from './Weather.module.css';
 export default class Weather extends Component {
     render() {
         return (
-            <div className="title">
-                今天天气不错
-            </div>
+            <span className={Hello.title}>
+                今天天气不错hahaxixi
+            </span>
         )
     }
 }
