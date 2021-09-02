@@ -4,7 +4,7 @@ import { Button, DatePicker, Space, Table, Tag} from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';
 //import { render } from 'react-dom';
-
+import Weather from './components/Weather'
 const App = () => {
   // 声明一个新的叫做 “count” 的 state 变量
   const [count, setCount] = useState(0);
@@ -103,11 +103,7 @@ const App = () => {
     <li key={porps.key}><a href={porps.link}>{porps.name + ' ' + porps.address}</a></li>
     
   )
-  class Weather extends React.Component{
-    render(){
-      return <div>今天天气不错</div>
-    }
-  }
+ 
 
   return(
     <>
