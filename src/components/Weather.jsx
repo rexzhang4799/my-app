@@ -4,7 +4,7 @@ export default class Weather extends Component {
     render() {
         return (
             <span className={Hello.title}>
-                xxxxxx
+                类组件
             </span>
         )
     }
