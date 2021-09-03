@@ -1,13 +1,13 @@
 //import React from 'react';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Button, DatePicker, Space, Table, Tag} from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';
 //import { render } from 'react-dom';
 import Weather from './components/Weather'
+//import Item from 'antd/lib/list/Item';
 const App = () => {
-  // 声明一个新的叫做 “count” 的 state 变量
-  const [count, setCount] = useState(0);
+  
   const data = [
     {
       key: '1',
@@ -99,11 +99,16 @@ const App = () => {
   },
   ];
   //const arr = ['1文字文字文字','2文字文字文字','33文字文字文字','4文字文字文字','35文字文字文字','36文字文字文字','37文字文字文字']
-  const lists = data.map(porps=> 
-    <li key={porps.key}><a href={porps.link}>{porps.name + ' ' + porps.address}</a></li>
+  const lists = data.map(Item=> 
+    <li key={Item.key}><a href={Item.link}>{Item.name + ' ' + Item.address}</a></li>
     
   )
- 
+  // 声明一个新的叫做 “count” 的 state 变量
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
 
   return(
     <>
@@ -116,9 +121,7 @@ const App = () => {
       </Space>
       <div>
         <p>You clicked {count} times</p>
-        <button onClick={() => setCount(count + 10)}>
-          Click me
-        </button>
+        <button onClick={() => setCount(count + 10)}>Click me</button>
       </div>
       <Table columns={columns} dataSource={data} />
       <ul>{lists}</ul>
