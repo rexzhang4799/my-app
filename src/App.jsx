@@ -109,7 +109,7 @@ const App = () => {
     // Update the document title using the browser API
     document.title = `You clicked ${count} times`;
   });
-
+  console.log(count,setCount)
   return(
     <>
       <Space>
