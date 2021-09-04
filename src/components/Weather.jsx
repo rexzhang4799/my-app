@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Hello from './Weather.module.css';
-/* class Weather extends Component {
+/* class Weather extends react.Component {
     render() {
         return (
             <span className={ergou.title}>
