@@ -20,3 +20,7 @@ body {
   height:100%;
   font:400 1em/1.8'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif
 }
+#root{
+  width: 60%;
+  margin:0 auto;
+}

@@ -1,7 +1,8 @@
 .title{
     background: red;
     padding: 0px;
-    width: 80%;
+    width: 100%;
     color: white;
     font-weight: bold;
+    margin:10px auto;
 }

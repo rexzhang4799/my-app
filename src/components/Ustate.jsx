@@ -14,9 +14,9 @@ const Ustate = () => {
   }
   
     return(
-        <div style={{ background:'blue'}}>
+        <div style={{ padding:'10px',background:'green'}}>
         <span>You clicked {count} times</span>
-        <button onClick={add}>Click me !</button>
+        <button style={{cursor:'pointer',marginLeft:'10px'}} onClick={add}>Click me !</button>
         {/* <button onClick={() => setCount(count + 10)}>Click me</button> */}
       </div>
     )
