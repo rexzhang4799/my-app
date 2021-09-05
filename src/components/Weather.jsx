@@ -1,9 +1,9 @@
 import React from 'react';
-import Hello from './Weather.module.css';
+import Style from './Weather.module.css';
 /* class Weather extends react.Component {
     render() {
         return (
-            <span className={ergou.title}>
+            <span className={Style.title}>
                 类组件里面有this，有state，有生命周期
             </span>
         )
@@ -11,7 +11,7 @@ import Hello from './Weather.module.css';
 } */
 const Weather = () => {
     return(
-        <h2 className={Hello.title}>
+        <h2 className={Style.title}>
                 函数组件里面没有this，没有state，没有生命周期，以后可以用hooks实现！
         </h2>
     )

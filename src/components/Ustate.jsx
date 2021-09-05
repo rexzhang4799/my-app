@@ -6,12 +6,18 @@ const Ustate = () => {
   useEffect(() => {
     // Update the document title using the browser API
     document.title = `You clicked ${count} times`;
+   
   });
-  console.log(count,setCount)
+  //console.log(count,setCount)
+  const add = () => {
+    setCount(count+1)
+  }
+  
     return(
         <div style={{ background:'blue'}}>
         <span>You clicked {count} times</span>
-        <button onClick={() => setCount(count + 10)}>Click me</button>
+        <button onClick={add}>Click me !</button>
+        {/* <button onClick={() => setCount(count + 10)}>Click me</button> */}
       </div>
     )
 }
