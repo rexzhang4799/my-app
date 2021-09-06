@@ -5,14 +5,14 @@ import Style from './Weather.module.css';
         return (
             <h2 className={Style.title}>
                 类组件里面有this，有state，有生命周期
-           </h2>
+            </h2>
         )
     }
 } */
 const Weather = () => {
     return (
         <h2 className={Style.title}>
-                函数组件里面没有this，没有state，没有生命周期，以后可以用hooks实现！
+            函数组件里面没有this，没有state，没有生命周期，以后可以用hooks实现！
         </h2>
     )
 }
