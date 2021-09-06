@@ -15,6 +15,6 @@ const Weather = () => {
             函数组件里面没有this，没有state，没有生命周期，以后可以用hooks实现！
         </h2>
     )
-}
+};
 
 export default Weather;
