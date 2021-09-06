@@ -5,12 +5,16 @@ const Ustate = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     // Update the document title using the browser API
-    document.title = `You clicked ${count} times`;
+    //document.title = `You clicked ${count} times`;
+    
+    //document.getElementById('weather').innerText = `You clicked ${count+Math.random()} times`;
+    
    
   });
   //console.log(count,setCount)
   const add = () => {
-    setCount(count+1)
+    setCount(count+1);
+    document.getElementById('weather').innerText = `You clicked ${count} times`;
   }
   
     return(

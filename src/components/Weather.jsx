@@ -11,7 +11,7 @@ import Style from './Weather.module.css';
 } */
 const Weather = () => {
     return (
-        <h2 className={Style.title}>
+        <h2 className={Style.title} id='weather'>
             函数组件里面没有this，没有state，没有生命周期，以后可以用hooks实现！
         </h2>
     )
