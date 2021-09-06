@@ -37,20 +37,20 @@ const Ulist = () => {
     },
     {
       key: '5',
-      name: 'jerry3',
+      name: 'jerry33',
       age: 32,
       address: 'Sidney No. 3 Lake Park',
       tags: ['cool', 'teacher'],
       link:'3.qq.com',
     },
   ];
-  const Lists = data.map(Item=> 
-      <li key={Item.key}><a href={Item.link}>{Item.name + ' ' + Item.address}</a></li>
+  const lists = data.map(Item=> 
+      <li key={Item.key}><a href={Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
       
   );
   return(
     <ul>
-       {Lists}
+       {lists}
     </ul>
   )
 }
