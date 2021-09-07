@@ -44,8 +44,8 @@ const Ulist = () => {
       link:'3.qq.com',
     },
   ];
-  const lists = data.map(Item=> 
-      <li key={Item.key}><a href={Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
+  const lists = data.map(Item => 
+      <li tt={Item.key}><a href={Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
       
   );
   return(
