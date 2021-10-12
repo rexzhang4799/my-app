@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Ustate = () => {
     // 声明一个新的叫做 “count” 的 state 变量
   const [count, setCount] = useState(0);
+  console.log('888888')
   /* useEffect(() => {
     // Update the document title using the browser API
     //document.title = `You clicked ${count} times`;

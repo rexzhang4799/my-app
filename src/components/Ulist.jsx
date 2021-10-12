@@ -23,7 +23,7 @@ const Ulist = () => {
       key: '3',
       name: 'Joe Black3333',
       age: 32,
-      address: 'Sidney No. 3 Lake Park',
+      address: 'tianj No. 3 Lake Park',
       tags: ['cool', 'teacher'],
       link:'1.qq.com',
     },
@@ -31,7 +31,7 @@ const Ulist = () => {
       key: '4',
       name: 'tom3',
       age: 32,
-      address: 'Sidney No. 3 Lake Park',
+      address: 'beij No. 3 Lake Park',
       tags: ['cool', 'teacher'],
       link:'2.qq.com',
     },
@@ -39,13 +39,13 @@ const Ulist = () => {
       key: '5',
       name: 'jerry33',
       age: 32,
-      address: 'Sidney No. 3 Lake Park',
+      address: 'desin No. 3 Lake Park',
       tags: ['cool', 'teacher'],
       link:'3g.qq.com',
     },
   ];
   const lists = data.map(Item => 
-      <li key={Item.key}><a href={'https://'+Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
+      <li key={Item.key}><a href={'https://'+Item.link}>{Item.address }</a></li>
       
   );
   return(

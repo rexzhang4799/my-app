@@ -1,12 +1,14 @@
 import React from 'react';
 import Hdata from './components/Hdata';
+import Ulist from './components/Ulist';
 
 const App = () => {
 
   return (
-   
-    <Hdata/>
-   
+    <>
+    <Ulist/>
+      <Hdata/>
+    </>
   )
 
 }
