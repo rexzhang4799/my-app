@@ -41,11 +41,11 @@ const Ulist = () => {
       age: 32,
       address: 'Sidney No. 3 Lake Park',
       tags: ['cool', 'teacher'],
-      link:'3.qq.com',
+      link:'3g.qq.com',
     },
   ];
   const lists = data.map(Item => 
-      <li tt={Item.key}><a href={Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
+      <li key={Item.key}><a href={'https://'+Item.link}>{Item.key+ ' ' + Item.name + ' + ' + Item.address}</a></li>
       
   );
   return(
