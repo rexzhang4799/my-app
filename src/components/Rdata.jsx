@@ -8,7 +8,7 @@ class Rdata extends Component {
         repName:'',
         repUrl:'',
         isLoading:true,
-        keyWord:'sd',
+        keyWord:'r',
         error:''
 
     }
@@ -16,8 +16,10 @@ class Rdata extends Component {
     componentDidMount(){
         const URL = `https://api.github.com/search/repositories?q=${this.state.keyWord}&sort=stars`;
         console.log(`rdata的url是{URL}`);
+        //console.log('sdddsds');
          axios.get(URL)
          .then((value) => {
+             console.log(axios.get(URL))
              let {name,html_url} = value.data.items[0];
              this.setState({
                  repName:name,
