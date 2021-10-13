@@ -44,7 +44,7 @@ const Ulist = () => {
       link:'3g.qq.com',
     },
   ];
-  const lists = data.map(Item => 
+  const lists = data.map((Item)=> 
       <li key={Item.key}><a href={'https://'+Item.link}>{Item.address }</a></li>
       
   );
