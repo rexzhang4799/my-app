@@ -10,7 +10,7 @@ const Hlist = () => {
     
     const URL = `https://api.github.com/search/repositories?q=r&sort=stars`;
     useEffect(()=>{
-        console.log(`hlist的url是${URL}`);
+        //console.log(`hlist的url是${URL}`);
         axios.get(URL)
         .then((value) => {
             
@@ -30,7 +30,7 @@ const Hlist = () => {
     },[]);
     
        const lists =axios.get(URL).data;
-       console.log(lists)
+       //console.log(lists)
         if (isLoading) {
             return (
                 <h2>loading....</h2>
