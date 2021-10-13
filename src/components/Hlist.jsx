@@ -1,24 +1,21 @@
 import React, { useState,useEffect} from 'react';
 import axios from 'axios';
-const Hdata = () => {
+const Hlist = () => {
     
     const [repName,setRepName]=useState();
     const [repUrl,setRepUrl]=useState();
-    const [keyWord,setKeyWord]=useState('v');
+    
     const [isLoading,setIsLoading]=useState(true);
     const [error,setError]=useState('');
     
-    const URL = `https://api.github.com/search/repositories?q=${keyWord}&sort=stars`;
+    const URL = `https://api.github.com/search/repositories?q=r&sort=stars`;
     useEffect(()=>{
-        //console.log(`hdata的url是${URL}`);
+        console.log(`hlist的url是${URL}`);
         axios.get(URL)
         .then((value) => {
-            //setKeyWord('r');
-            console.log('d'+axios.get(URL))
+            
             const {name,html_url}=value.data.items[0];
-           // const lists = value.data.items;
-           // console.log(lists)
-            //console.log(value.data)
+           
             setRepName(name);
             setRepUrl(html_url);
             setIsLoading(false);
@@ -32,6 +29,8 @@ const Hdata = () => {
         
     },[]);
     
+       const lists =axios.get(URL).data;
+       console.log(lists)
         if (isLoading) {
             return (
                 <h2>loading....</h2>
@@ -39,7 +38,11 @@ const Hdata = () => {
         }else if(repName && repUrl && !error){
             return (
                 
-               <h2>{keyWord}请求数据<a href={repUrl}>{repName}</a></h2>
+                //lists.map(() => 
+                 
+                <h2>请求数据<a href={repUrl}>{repName}</a></h2>
+             //)
+                 
             )
         }else{
             return (
@@ -48,4 +51,4 @@ const Hdata = () => {
         }
    
 }
-export default Hdata;
+export default Hlist;
