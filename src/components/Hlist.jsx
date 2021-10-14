@@ -4,10 +4,8 @@ const Hlist = () => {
     
     const [repName,setRepName]=useState();
     const [repUrl,setRepUrl]=useState();
-    
     const [isLoading,setIsLoading]=useState(true);
     const [error,setError]=useState('');
-    
     const URL = `https://api.github.com/search/repositories?q=r&sort=stars`;
     useEffect(()=>{
         //console.log(`hlist的url是${URL}`);
