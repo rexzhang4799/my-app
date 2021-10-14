@@ -13,7 +13,6 @@ const Hlist = () => {
         .then((value) => {
             
             const {name,html_url}=value.data.items[0];
-           
             setRepName(name);
             setRepUrl(html_url);
             setIsLoading(false);
