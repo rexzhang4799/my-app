@@ -1,0 +1,8 @@
+dist/
+build/
+node_modules/
+next-env.d.ts
+public/
+coverage/*
+dwt-*
+.reports/
