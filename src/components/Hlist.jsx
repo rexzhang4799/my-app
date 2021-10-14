@@ -30,7 +30,7 @@ const Hlist = () => {
     },[]);
     
        const lists =axios.get(URL).data;
-       console.log(lists)
+       //console.log(lists)
         if (isLoading) {
             return (
                 <h2>loading....</h2>
